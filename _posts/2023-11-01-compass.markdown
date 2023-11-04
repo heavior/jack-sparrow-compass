@@ -5,26 +5,22 @@ date:   2023-11-01 11:11:11 -0800
 ---
 ## Working Jack Sparrow Compass
 
-        "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._"
-        ―James Norrington while examining Jack's pistol, compass and sword
-        (Source:[ https://pirates.fandom.com/wiki/Jack_Sparrow%27s_compass](https://pirates.fandom.com/wiki/Jack_Sparrow%27s_compass)) \
+> "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._"
+> ―James Norrington while examining Jack's pistol, compass and sword
+> [Pirates of the Caribbean wiki ](https://pirates.fandom.com/wiki/Jack_Sparrow%27s_compass)
 
+This story started in 2022 on Burning Man. My friends turned their tricycle into a ship: with mast, sales, and everything. And as we were cruising around the idea came to mind: what if we make a compass that always points to The Man (the central art object of the event)? Like a compass that would always lead you home. Obviously, it was inspired by Jack’s compass the one from Pirates of the Caribbean. 
 
-This story started in 2022 on Burning Man. My friends turned their tricycle into a ship: with mast, sales, and everything. And as we were cruising around the idea came to mind: what if we make a compass that always points to The Man (the central art object of the event)? Like a compass that would always lead you home. Obviously, it was inspired by Jack’s compass the one from Pirates of the Caribbean. \
- \
 Later as I was reflecting on the experience, the idea evolved: instead of pointing to one destination, it should always lead to the next adventure. 
 
-So I built it: a programmable compass that has a set of destinations in memory, and can lead the person on a quest between them. With added visual and mechanical effects, it creates a magical interactive experience. It’s like Jack Sparrow's compass that actually works. \
- \
+So I built it: a programmable compass that has a set of destinations in memory, and can lead the person on a quest between them. With added visual and mechanical effects, it creates a magical interactive experience. It’s like Jack Sparrow's compass that actually works. 
+
 This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutydiy/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
 
 
 ## Features
 
 Components that make the magic:
-
-
-
 * The compass is made mostly out of wood and brass, it sits well in the hand and has a lace to hang it around the neck or carabiner to affix it on the belt.
 * Every visible brass piece is aged in ammonia to make it look ‘antique’ and consistent. No switches or charging slots are visible to keep the appearance.
 * The dial is the main interactive element:
@@ -46,6 +42,7 @@ Components that make the magic:
     * When the battery is low, spinning gets even slower and UV lights are disabled
 * Compass also has an accelerometer and gyroscope, but I haven’t come up with a good intuitive interaction for it. Could make it do something special when the player shakes it or turns it upside down. If you have some ideas, please share! 
 
+
 So, all that makes Compass a pretty good prop for interactive geo-location quests and long games.
 
 
@@ -56,26 +53,22 @@ When building the box, I tried to achieve a repeatable process. I created a para
 The current iteration is made from stained basswood pieces cut on a Cricut and glued together. The decoration layer uses natural wood veneer. Veneer still creates a good visual effect but is prone to delayering and warping. I will look into using a bone inlay or a brass sheet for the decoration layer for future iterations.
 
 The hinge, latch are ring holder are bought from Amazon, but customized:
-
-
-
 * The hinge is cut to better fit the dimensions
 * The latch receiver is replaced with a piece of brass rod
 * The ring on the holder is replaced with a bigger one for better proportions
 * All parts are aged in ammonia fumes for a few hours
+
 
 The “dome” on the lid is made from a 6 mm acrylic DIY Christmas decoration ball. The outer side is covered with black acrylic paint and a satin finish, and the inside is glossy enamel with a ‘star map’.
 
 Inside the compass, there is a brass piece with a sundial. I engraved the contours onto a 2mm brass sheet and then used a grinder and a sander to cut pieces from the sheet. Then some soldering on the back side puts it all together, and a few hours in ammonia for the consistent look.
 
 The main dial is a multi-layer item:
-
-
-
 1. A small Lego gear that mounts on the mechanism
 2. ABS sheet gives it structure
 3. Glow in dark paper with a printed wind rose 
 4. A brass hemisphere removed from a decorative furniture nail
+
 
 All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, and then cut with scissors
 
@@ -85,7 +78,6 @@ The bottom of the box is a removable lid fixed by four brass machine screws. In 
 ## The brain
 
 Inside the compass, there is a printed circuit board with a few components:
-
 * Controller
 * Magnetometer to detect real direction to the north
 * GPS module to understand the current position
@@ -97,7 +89,7 @@ Inside the compass, there is a printed circuit board with a few components:
 * On/off switch
 * A couple of power-controlling mosfet transistors
 
- \
+
 In the center is a custom 3D-printed mount that brings together a motor, circuit board, axles, gears, and angular encoder. Using PETG to keep it operational in very hot weather.
 
 I went through two iterations of the board layout to achieve a compact size. I tried to use smaller motors too, but they were not very reliable. It would be nice to try to place more components directly on the PCB, but that would require another complete redesign. 
@@ -130,10 +122,10 @@ Let me know what you think about this project, and reach out if you want to coll
 [Instagram](https://www.instagram.com/lightdutydiy/)
 
 
-## Links
+## Links and Credits
 
 * Some reels about the process in my Instagram: [@LightDutyDIY](https://www.instagram.com/lightdutydiy/)
 * Youtube: [https://www.youtube.com/@LightDuty](https://www.youtube.com/@LightDuty) 
-* A couple of stories about working on this compass: [https://www.linkedin.com/pulse/compass-doesnt-point-north-creating-experience-burning-balashov/](https://www.linkedin.com/pulse/compass-doesnt-point-north-creating-experience-burning-balashov/) 
-* Great source for inspiration if you are working on your compass: [https://www.jacksparrowcostuming.com/compass.htm](https://www.jacksparrowcostuming.com/compass.htm)
-* I’m very grateful to this person for figuring out the dimensions: [https://www.studiocreations.com/howto/blueprints/ex_jacksparrowcompass01.html](https://www.studiocreations.com/howto/blueprints/ex_jacksparrowcompass01.html) Even though I didn’t follow them exactly, the original PDF layout helped me start the project.
+* A couple of stories about working on this compass: [The compass that doesn’t point North. Obsessing over user experience for Burning Man.](https://www.linkedin.com/pulse/compass-doesnt-point-north-creating-experience-burning-balashov/) 
+* Great source for inspiration if you are working on your compass: [The Jack Sparrow Costuming](https://www.jacksparrowcostuming.com/compass.htm)
+* I’m very grateful to this person for figuring out the dimensions: [Blueprinting Example - Jack Sparrow Compass](https://www.studiocreations.com/howto/blueprints/ex_jacksparrowcompass01.html) Even though I didn’t follow them exactly, the original PDF layout helped me start the project.
