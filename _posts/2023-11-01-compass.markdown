@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Working Jack Sparrow Compass"
+title:  "Working Jack Sparrow Compass - Design&Features"
 date:   2023-11-01 11:11:11 -0800
 ---
 
@@ -11,7 +11,7 @@ date:   2023-11-01 11:11:11 -0800
 	</figcaption>
 </figure>
 
-## Working Jack Sparrow Compass
+## Design & Features
 
 > "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._"
 > ―James Norrington while examining Jack's pistol, compass and sword
@@ -54,7 +54,7 @@ Components that make the magic:
 So, all that makes Compass a pretty good prop for interactive geo-location quests and long games.
 
 
-## The box
+## The Box
 
 When building the box, I tried to achieve a repeatable process. I created a parametric generator for the part templates and used a Cricut Mater machine to transfer the design into material. That allowed me to do iterations and fix mistakes as I was figuring out achievable dimensions and the process. Still, I’m not entirely happy with the automation: it still takes at least 3-4 days and 70+ parts to build a single item. The next iteration, if it happens, will rely on CNC milling.
 
@@ -83,7 +83,7 @@ All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, 
 The bottom of the box is a removable lid fixed by four brass machine screws. In the center, it has an access window that can be unscrewed to access the on-off switch and charging/programming connector inside. When closed, the compass has no visible indication of electrical components to keep the magic working. In the future, I’ll try to redesign the bottom part to make it simpler - just need a better way to charge and control. Wireless charging, maybe?
 
 
-## The brain
+## The Brain
 
 Inside the compass, there is a printed circuit board with a few components:
 * Controller
@@ -105,7 +105,7 @@ I went through two iterations of the board layout to achieve a compact size. I t
 I will not dive deep into the software part of the compass. I will only mention that generative AI helped a lot with converting maps Google Maps into the compass data format, crowdsourcing helped with curating the destinations and working with off-the-shelve components of unknown origin was painful. Currently, the compass can remember visited locations, always chooses the closest new point, and supports ‘working hours’ for destinations.
 
 
-## The future
+## The Future
 
 I have a few ideas on how to evolve the compass.
 
@@ -124,10 +124,7 @@ I assembled three units of the current generation, but want to make a handful mo
 
 I think it has great potential for quests, renaissance fairs, and pirate festivals. It’s also a great conversation starter when used as a prop for a cosplay costume.
 
- \
-Let me know what you think about this project, and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
-
-[Instagram](https://www.instagram.com/lightdutydiy/)
+[Let me know what you think about this project](https://www.instagram.com/lightdutydiy/), and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
 
 
 ## Links and Credits
