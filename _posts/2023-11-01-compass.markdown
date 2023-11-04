@@ -1,0 +1,139 @@
+---
+layout: post
+title:  "Working Jack Sparrow Compass"
+date:   2023-11-01 11:11:11 -0800
+---
+## Working Jack Sparrow Compass
+
+        "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._"
+        ―James Norrington while examining Jack's pistol, compass and sword
+        (Source:[ https://pirates.fandom.com/wiki/Jack_Sparrow%27s_compass](https://pirates.fandom.com/wiki/Jack_Sparrow%27s_compass)) \
+
+
+This story started in 2022 on Burning Man. My friends turned their tricycle into a ship: with mast, sales, and everything. And as we were cruising around the idea came to mind: what if we make a compass that always points to The Man (the central art object of the event)? Like a compass that would always lead you home. Obviously, it was inspired by Jack’s compass the one from Pirates of the Caribbean. \
+ \
+Later as I was reflecting on the experience, the idea evolved: instead of pointing to one destination, it should always lead to the next adventure. 
+
+So I built it: a programmable compass that has a set of destinations in memory, and can lead the person on a quest between them. With added visual and mechanical effects, it creates a magical interactive experience. It’s like Jack Sparrow's compass that actually works. \
+ \
+This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutydiy/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
+
+
+## Features
+
+Components that make the magic:
+
+
+
+* The compass is made mostly out of wood and brass, it sits well in the hand and has a lace to hang it around the neck or carabiner to affix it on the belt.
+* Every visible brass piece is aged in ammonia to make it look ‘antique’ and consistent. No switches or charging slots are visible to keep the appearance.
+* The dial is the main interactive element:
+    * When the compass is opened, it locates the next destination and turns the dial in that direction. 
+    * When the player reaches the destination, it makes a ‘happy dance’ to indicate the achievement. 
+    * When the compass is closed - the dial stops spinning and the compass goes silent. 
+    * When the player is close to a destination, but hasn’t used the compass in a while - it will spin to create vibration and draw attention to it.
+    * It spins slowly when the destination is not yet calculated.
+    * More effects could be added. I tried making it beat some melody, but that part needs more work.
+* The dial is glowing at night, but there are no lights visible. It adds to the magic of the experience and removes the need to have a flashlight handy. Compass charges the dial with UV light after sunset when the lid is closed.
+* It supports Bluetooth for calibration and sharing diagnostic information. It is activated when the lid is tapped three times. 
+* Compass can keep the player entertained for 20+ hours thanks to a number of energy optimizations:
+    * Low-power IoT chip
+    * Bluetooth Low Energy protocol that is disabled after a minute of inactivity
+    * Power saving GPS mode
+    * UV light to charge the dial works only at night
+    * Spinning stops when the lid is closed
+    * Motor speed is limited to reduce the current
+    * When the battery is low, spinning gets even slower and UV lights are disabled
+* Compass also has an accelerometer and gyroscope, but I haven’t come up with a good intuitive interaction for it. Could make it do something special when the player shakes it or turns it upside down. If you have some ideas, please share! 
+
+So, all that makes Compass a pretty good prop for interactive geo-location quests and long games.
+
+
+## The box
+
+When building the box, I tried to achieve a repeatable process. I created a parametric generator for the part templates and used a Cricut Mater machine to transfer the design into material. That allowed me to do iterations and fix mistakes as I was figuring out achievable dimensions and the process. Still, I’m not entirely happy with the automation: it still takes at least 3-4 days and 70+ parts to build a single item. The next iteration, if it happens, will rely on CNC milling.
+
+The current iteration is made from stained basswood pieces cut on a Cricut and glued together. The decoration layer uses natural wood veneer. Veneer still creates a good visual effect but is prone to delayering and warping. I will look into using a bone inlay or a brass sheet for the decoration layer for future iterations.
+
+The hinge, latch are ring holder are bought from Amazon, but customized:
+
+
+
+* The hinge is cut to better fit the dimensions
+* The latch receiver is replaced with a piece of brass rod
+* The ring on the holder is replaced with a bigger one for better proportions
+* All parts are aged in ammonia fumes for a few hours
+
+The “dome” on the lid is made from a 6 mm acrylic DIY Christmas decoration ball. The outer side is covered with black acrylic paint and a satin finish, and the inside is glossy enamel with a ‘star map’.
+
+Inside the compass, there is a brass piece with a sundial. I engraved the contours onto a 2mm brass sheet and then used a grinder and a sander to cut pieces from the sheet. Then some soldering on the back side puts it all together, and a few hours in ammonia for the consistent look.
+
+The main dial is a multi-layer item:
+
+
+
+1. A small Lego gear that mounts on the mechanism
+2. ABS sheet gives it structure
+3. Glow in dark paper with a printed wind rose 
+4. A brass hemisphere removed from a decorative furniture nail
+
+All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, and then cut with scissors
+
+The bottom of the box is a removable lid fixed by four brass machine screws. In the center, it has an access window that can be unscrewed to access the on-off switch and charging/programming connector inside. When closed, the compass has no visible indication of electrical components to keep the magic working. In the future, I’ll try to redesign the bottom part to make it simpler - just need a better way to charge and control. Wireless charging, maybe?
+
+
+## The brain
+
+Inside the compass, there is a printed circuit board with a few components:
+
+* Controller
+* Magnetometer to detect real direction to the north
+* GPS module to understand the current position
+* Servo motor to spin the dial
+* Angular encoder to understand the precise dial position
+* Battery
+* UV led to charge the glow-in-the-dark dial
+* Charging/programming port
+* On/off switch
+* A couple of power-controlling mosfet transistors
+
+ \
+In the center is a custom 3D-printed mount that brings together a motor, circuit board, axles, gears, and angular encoder. Using PETG to keep it operational in very hot weather.
+
+I went through two iterations of the board layout to achieve a compact size. I tried to use smaller motors too, but they were not very reliable. It would be nice to try to place more components directly on the PCB, but that would require another complete redesign. 
+
+I will not dive deep into the software part of the compass. I will only mention that generative AI helped a lot with converting maps Google Maps into the compass data format, crowdsourcing helped with curating the destinations and working with off-the-shelve components of unknown origin was painful. Currently, the compass can remember visited locations, always chooses the closest new point, and supports ‘working hours’ for destinations.
+
+
+## The future
+
+I have a few ideas on how to evolve the compass.
+
+It is trivial to implement “quests” (sequences of destinations) and map updates over Bluetooth. Bluetooth can also add interactivity: the compass becomes a beacon, and surrounding objects can detect it and become alive. That would work similarly to how magic wands work in the Harry Potter section of Universal Studio theme parks.
+
+From the assembly perspective, I want to use a CNC mill instead of Cricut for most parts to make the assembly less time-consuming. This will also lead to redesigning the bottom part.
+
+Finally, as I mentioned, I want to explore more interactivity: allow compasses to point to each other, or track moving objects. Thinking about Ultra Wide Bandwith protocol, but I'm not sure if I have room for another sizeable microchip. Though Apple managed to add it inside Airtag, so I’m still exploring.
+
+An easier path to interactivity is adding a remote control: something like a Gear VR controller can be hidden in the pocket and use Bluetooth to prank people: make the compass point to a specific person or a bottle of rum!
+
+
+## Conclusion
+
+I assembled three units of the current generation, but want to make a handful more to share with people on Burning Man and maybe regional BM events. Look out for the least conspicuous pirate ;) 
+
+I think it has great potential for quests, renaissance fairs, and pirate festivals. It’s also a great conversation starter when used as a prop for a cosplay costume.
+
+ \
+Let me know what you think about this project, and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
+
+[Instagram](https://www.instagram.com/lightdutydiy/)
+
+
+## Links
+
+* Some reels about the process in my Instagram: [@LightDutyDIY](https://www.instagram.com/lightdutydiy/)
+* Youtube: [https://www.youtube.com/@LightDuty](https://www.youtube.com/@LightDuty) 
+* A couple of stories about working on this compass: [https://www.linkedin.com/pulse/compass-doesnt-point-north-creating-experience-burning-balashov/](https://www.linkedin.com/pulse/compass-doesnt-point-north-creating-experience-burning-balashov/) 
+* Great source for inspiration if you are working on your compass: [https://www.jacksparrowcostuming.com/compass.htm](https://www.jacksparrowcostuming.com/compass.htm)
+* I’m very grateful to this person for figuring out the dimensions: [https://www.studiocreations.com/howto/blueprints/ex_jacksparrowcompass01.html](https://www.studiocreations.com/howto/blueprints/ex_jacksparrowcompass01.html) Even though I didn’t follow them exactly, the original PDF layout helped me start the project.
