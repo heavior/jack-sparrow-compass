@@ -9,10 +9,10 @@ date:   2023-11-01 11:11:11 -0800
 	<figcaption>
 		Photo: <a href="https://spacechildphoto.com/about/">Eduard</a>
 	</figcaption>
-</figure>
+</figure> 
 
-> "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._"
-> ―James Norrington while examining Jack's pistol, compass and sword
+> "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._" \
+> ―James Norrington while examining Jack's pistol, compass and sword \
 > [Pirates of the Caribbean wiki ](https://pirates.fandom.com/wiki/Jack_Sparrow%27s_compass)
 
 This story started in 2022 on Burning Man. My friends turned their tricycle into a ship: with mast, sales, and everything. And as we were cruising around the idea came to mind: what if we make a compass that always points to The Man (the central art object of the event)? Like a compass that would always lead you home. Obviously, it was inspired by Jack’s compass the one from Pirates of the Caribbean. 
