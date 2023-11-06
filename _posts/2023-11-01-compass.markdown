@@ -133,7 +133,7 @@ All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, 
 <figure>
 	<img src="{{ site.baseurl }}/assets/compass_lace.jpg" alt="DIY interactive compass from The Pirates of the Caribbean">
 	<figcaption>
-		Finally, to complete the experience, I added a leather lace with some braiding, aged brass carabiner from Aliexpress, and sailors know to close the loop. This allows comfortable wearing around the neck as well as on the belt.
+		Finally, to complete the experience, I added a leather lace with some braiding, aged brass carabiner from Aliexpress, and sailors knot to close the loop. This allows comfortable wearing around the neck as well as on the belt.
 	</figcaption>
 </figure> 
 
