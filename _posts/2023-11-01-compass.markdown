@@ -136,11 +136,15 @@ TODO: Photo of the board
 {% endcomment %}
 
 
-In the center is a custom 3D-printed mount that brings together a motor, circuit board, axles, gears, and angular encoder. Using PETG to keep it operational in very hot weather.
+In the center is a custom 3D-printed mount that brings together a motor, circuit board, axles, gears, and angular encoder. 
 
-{% comment %}
-TODO: Photo of 3D mount iterations
-{% endcomment %}
+<figure>
+	<img src="{{ site.baseurl }}/assets/servo_mount_iterations.jpg" alt="DIY interactive compass from The Pirates of the Caribbean">
+	<figcaption>
+		Different iterations on the mount design. Final version uses PETG to keep it operational in very hot weather.
+	</figcaption>
+</figure> 
+
 
 I went through two iterations of the board layout to achieve a compact size. I tried to use smaller motors too, but they were not very reliable. It would be nice to try to place more components directly on the PCB, but that would require another complete redesign. 
 
