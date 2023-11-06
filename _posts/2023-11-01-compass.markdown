@@ -113,9 +113,13 @@ The main dial is a multi-layer item:
 
 All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, and then cut with scissors
 
-{% comment %}
-TODO: Photo of glowing dial, maybe video
-{% endcomment %}
+
+<figure>
+	<img src="{{ site.baseurl }}/assets/dial.gif" alt="Glow in the dark wind rose for Jack Sparrow Compass">
+	<figcaption>
+        If fully charged, the glowing is very bright
+	</figcaption>
+</figure> 
 
 
 <figure>
