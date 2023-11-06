@@ -4,12 +4,10 @@ title:  "Working Jack Sparrow Compass"
 date:   2023-11-01 11:11:11 -0800
 ---
 
-<figure>
-	<img src="{{ site.baseurl }}/assets/pirate.jpg" alt="Using programmable Jack Sparrow Compass at Burning Man 2023">
-	<figcaption>
-		Photo: <a href="https://spacechildphoto.com/about/">Eduard</a>
-	</figcaption>
-</figure> 
+{% comment %}
+TODO: Photos the compass iterations ???
+{% endcomment %}
+
 
 > "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._" \
 > ―James Norrington while examining Jack's pistol, compass and sword \
@@ -20,6 +18,11 @@ This story started in 2022 on Burning Man. My friends turned their tricycle into
 Later as I was reflecting on the experience, the idea evolved: instead of pointing to one destination, it should always lead to the next adventure. 
 
 So I built it: a programmable compass that has a set of destinations in memory, and can lead the person on a quest between them. With added visual and mechanical effects, it creates a magical interactive experience. It’s like Jack Sparrow's compass that actually works. 
+
+{% comment %}
+TODO: More photos of a compass
+{% endcomment %}
+
 
 This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutydiy/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
 
@@ -56,6 +59,10 @@ So, all that makes Compass a pretty good prop for interactive geo-location quest
 
 When building the box, I tried to achieve a repeatable process. I created a parametric generator for the part templates and used a Cricut Mater machine to transfer the design into material. That allowed me to do iterations and fix mistakes as I was figuring out achievable dimensions and the process. Still, I’m not entirely happy with the automation: it still takes at least 3-4 days and 70+ parts to build a single item. The next iteration, if it happens, will rely on CNC milling.
 
+{% comment %}
+TODO: Cricut screenshot
+{% endcomment %}
+
 The current iteration is made from stained basswood pieces cut on a Cricut and glued together. The decoration layer uses natural wood veneer. Veneer still creates a good visual effect but is prone to delayering and warping. I will look into using a bone inlay or a brass sheet for the decoration layer for future iterations.
 
 The hinge, latch are ring holder are bought from Amazon, but customized:
@@ -64,10 +71,21 @@ The hinge, latch are ring holder are bought from Amazon, but customized:
 * The ring on the holder is replaced with a bigger one for better proportions
 * All parts are aged in ammonia fumes for a few hours
 
+{% comment %}
+TODO: Photo of brass parts
+{% endcomment %}
 
 The “dome” on the lid is made from a 6 mm acrylic DIY Christmas decoration ball. The outer side is covered with black acrylic paint and a satin finish, and the inside is glossy enamel with a ‘star map’.
 
+{% comment %}
+TODO: Photo of spare dome - inside and out
+{% endcomment %}
+
 Inside the compass, there is a brass piece with a sundial. I engraved the contours onto a 2mm brass sheet and then used a grinder and a sander to cut pieces from the sheet. Then some soldering on the back side puts it all together, and a few hours in ammonia for the consistent look.
+
+{% comment %}
+TODO: Photo of sundial cutting (old)
+{% endcomment %}
 
 The main dial is a multi-layer item:
 1. A small Lego gear that mounts on the mechanism
@@ -75,10 +93,27 @@ The main dial is a multi-layer item:
 3. Glow in dark paper with a printed wind rose 
 4. A brass hemisphere removed from a decorative furniture nail
 
-
 All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, and then cut with scissors
 
-The bottom of the box is a removable lid fixed by four brass machine screws. In the center, it has an access window that can be unscrewed to access the on-off switch and charging/programming connector inside. When closed, the compass has no visible indication of electrical components to keep the magic working. In the future, I’ll try to redesign the bottom part to make it simpler - just need a better way to charge and control. Wireless charging, maybe?
+{% comment %}
+TODO: Photo of glowing dial, maybe video
+{% endcomment %}
+
+
+<figure>
+	<img src="{{ site.baseurl }}/assets/compass_bottom.jpg" alt="Working Jack Sparrow Compass on Arduino">
+	<figcaption>
+		The bottom of the box is a removable lid fixed by four brass machine screws. In the center, it has an access window that can be unscrewed to access the on-off switch and charging/programming connector inside. When closed, the compass has no visible indication of electrical components to keep the magic working. In the future, I’ll try to redesign the bottom part to make it simpler - just need a better way to charge and control. Wireless charging, maybe?
+	</figcaption>
+</figure> 
+
+
+<figure>
+	<img src="{{ site.baseurl }}/assets/compass_lace.jpg" alt="DIY interactive compass from The Pirates of the Caribbean">
+	<figcaption>
+		Finally, to complete the experience, I added a leather lace with some braiding, aged brass carabiner from Aliexpress, and sailors know to close the loop. This allows comfortable wearing around the neck as well as on the belt.
+	</figcaption>
+</figure> 
 
 
 ## The Brain
@@ -96,9 +131,22 @@ Inside the compass, there is a printed circuit board with a few components:
 * A couple of power-controlling mosfet transistors
 
 
+{% comment %}
+TODO: Photo of the board
+{% endcomment %}
+
+
 In the center is a custom 3D-printed mount that brings together a motor, circuit board, axles, gears, and angular encoder. Using PETG to keep it operational in very hot weather.
 
+{% comment %}
+TODO: Photo of 3D mount iterations
+{% endcomment %}
+
 I went through two iterations of the board layout to achieve a compact size. I tried to use smaller motors too, but they were not very reliable. It would be nice to try to place more components directly on the PCB, but that would require another complete redesign. 
+
+{% comment %}
+TODO: Photo of PCB iterations
+{% endcomment %}
 
 I will not dive deep into the software part of the compass. I will only mention that generative AI helped a lot with converting maps Google Maps into the compass data format, crowdsourcing helped with curating the destinations and working with off-the-shelve components of unknown origin was painful. Currently, the compass can remember visited locations, always chooses the closest new point, and supports ‘working hours’ for destinations.
 
@@ -121,6 +169,15 @@ An easier path to interactivity is adding a remote control: something like a Gea
 I assembled three units of the current generation, but want to make a handful more to share with people on Burning Man and maybe regional BM events. Look out for the least conspicuous pirate ;) 
 
 I think it has great potential for quests, renaissance fairs, and pirate festivals. It’s also a great conversation starter when used as a prop for a cosplay costume.
+
+
+<figure>
+	<img src="{{ site.baseurl }}/assets/pirate.jpg" alt="Using programmable Jack Sparrow Compass at Burning Man 2023">
+	<figcaption>
+		Photo: <a href="https://spacechildphoto.com/about/">Eduard</a>
+	</figcaption>
+</figure> 
+
 
 [Let me know what you think about this project](https://www.instagram.com/lightdutydiy/), and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
 
