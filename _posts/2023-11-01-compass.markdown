@@ -37,6 +37,13 @@ This page offers a breakdown of the features and build process. If you are inter
 
 ## Features
 
+<figure>
+	<iframe width="620" height="350" src="https://www.youtube-nocookie.com/embed/liib8IHjvDs?si=D_pGeLDz6buo2a08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<figcaption>
+        Short demo of effects
+	</figcaption>
+</figure> 
+
 Components that make the magic:
 * The compass is made mostly out of wood and brass, it sits well in the hand and has a lace to hang it around the neck or carabiner to affix it on the belt.
 * Every visible brass piece is aged in ammonia to make it look ‘antique’ and consistent. No switches or charging slots are visible to keep the appearance.
