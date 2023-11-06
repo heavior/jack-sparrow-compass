@@ -85,7 +85,7 @@ The hinge, latch are ring holder are bought from Amazon, but customized:
 * All parts are aged in ammonia fumes for a few hours
 
 <figure>
-	<img src="{{ site.baseurl }}/assets/prass_parts.jpg" alt="Aging brass in ammonia for antique compass">
+	<img src="{{ site.baseurl }}/assets/brass_parts.jpg" alt="Aging brass in ammonia for antique compass">
 	<figcaption>
 		Brass parts on display
 	</figcaption>
