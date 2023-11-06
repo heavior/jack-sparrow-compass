@@ -21,19 +21,16 @@ Later as I was reflecting on the experience, the idea evolved: instead of pointi
 
 So I built it: a programmable compass that has a set of destinations in memory, and can lead the person on a quest between them. With added visual and mechanical effects, it creates a magical interactive experience. It’s like Jack Sparrow's compass that actually works. 
 
-{% comment %}
-TODO: Photo Closed compass at a different angle
-{% endcomment %}
-
-
 <figure>
 	<img src="{{ site.baseurl }}/assets/compass_open.jpg" alt="Jack Sparrow Compass">
 	<figcaption>
 	</figcaption>
 </figure> 
-
-
-
+<figure>
+	<img src="{{ site.baseurl }}/assets/compass_closed.jpg" alt="Jack Sparrow Compass">
+	<figcaption>
+	</figcaption>
+</figure> 
 
 This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutydiy/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
 
@@ -151,9 +148,11 @@ Inside the compass, there is a printed circuit board with a few components:
 * A couple of power-controlling mosfet transistors
 
 
-{% comment %}
-TODO: Photo of the board
-{% endcomment %}
+<figure>
+	<img src="{{ site.baseurl }}/assets/compass_inside.jpg" alt="Electronig compass using Arduino">
+	<figcaption>
+	</figcaption>
+</figure> 
 
 
 In the center is a custom 3D-printed mount that brings together a motor, circuit board, axles, gears, and angular encoder. 
@@ -165,12 +164,13 @@ In the center is a custom 3D-printed mount that brings together a motor, circuit
 	</figcaption>
 </figure> 
 
+<figure>
+	<img src="{{ site.baseurl }}/assets/board_iterations.jpg" alt="Electronig compass using Arduino">
+	<figcaption>
+        I went through two iterations of the board layout to achieve a compact size. I tried to use smaller motors too, but they were not very reliable. It would be nice to try to place more components directly on the PCB, but that would require another complete redesign. 
+	</figcaption>
+</figure> 
 
-I went through two iterations of the board layout to achieve a compact size. I tried to use smaller motors too, but they were not very reliable. It would be nice to try to place more components directly on the PCB, but that would require another complete redesign. 
-
-{% comment %}
-TODO: Photo of PCB iterations
-{% endcomment %}
 
 I will not dive deep into the software part of the compass. I will only mention that generative AI helped a lot with converting maps Google Maps into the compass data format, crowdsourcing helped with curating the destinations and working with off-the-shelve components of unknown origin was painful. Currently, the compass can remember visited locations, always chooses the closest new point, and supports ‘working hours’ for destinations.
 
