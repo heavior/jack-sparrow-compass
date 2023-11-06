@@ -4,10 +4,12 @@ title:  "Working Jack Sparrow Compass"
 date:   2023-11-01 11:11:11 -0800
 ---
 
-{% comment %}
-TODO: Photos the compass iterations ???
-{% endcomment %}
-
+<figure>
+	<img src="{{ site.baseurl }}/assets/pirate.jpg" alt="Using programmable Jack Sparrow Compass at Burning Man 2023">
+	<figcaption>
+		Photo: <a href="https://spacechildphoto.com/about/">Eduard</a>
+	</figcaption>
+</figure> 
 
 > "_No additional shot nor powder, a compass that doesn't point north. And I half expected it to be made of wood._" \
 > ―James Norrington while examining Jack's pistol, compass and sword \
@@ -20,8 +22,17 @@ Later as I was reflecting on the experience, the idea evolved: instead of pointi
 So I built it: a programmable compass that has a set of destinations in memory, and can lead the person on a quest between them. With added visual and mechanical effects, it creates a magical interactive experience. It’s like Jack Sparrow's compass that actually works. 
 
 {% comment %}
-TODO: More photos of a compass
+TODO: Photo Closed compass at a different angle
 {% endcomment %}
+
+
+<figure>
+	<img src="{{ site.baseurl }}/assets/compass_open.jpg" alt="Jack Sparrow Compass">
+	<figcaption>
+	</figcaption>
+</figure> 
+
+
 
 
 This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutydiy/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
@@ -71,6 +82,7 @@ The current iteration is made from stained basswood pieces cut on a Cricut and g
 
 The hinge, latch are ring holder are bought from Amazon, but customized:
 * The hinge is cut to better fit the dimensions
+* The latch is bend to allow it to lock automatically when lid is closed
 * The latch receiver is replaced with a piece of brass rod
 * The ring on the holder is replaced with a bigger one for better proportions
 * All parts are aged in ammonia fumes for a few hours
@@ -181,15 +193,6 @@ An easier path to interactivity is adding a remote control: something like a Gea
 I assembled three units of the current generation, but want to make a handful more to share with people on Burning Man and maybe regional BM events. Look out for the least conspicuous pirate ;) 
 
 I think it has great potential for quests, renaissance fairs, and pirate festivals. It’s also a great conversation starter when used as a prop for a cosplay costume.
-
-
-<figure>
-	<img src="{{ site.baseurl }}/assets/pirate.jpg" alt="Using programmable Jack Sparrow Compass at Burning Man 2023">
-	<figcaption>
-		Photo: <a href="https://spacechildphoto.com/about/">Eduard</a>
-	</figcaption>
-</figure> 
-
 
 [Let me know what you think about this project](https://www.instagram.com/lightdutydiy/), and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
 
