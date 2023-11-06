@@ -98,11 +98,12 @@ The hinge, latch are ring holder are bought from Amazon, but customized:
 	</figcaption>
 </figure> 
 
-Inside the compass, there is a brass piece with a sundial. I engraved the contours onto a 2mm brass sheet and then used a grinder and a sander to cut pieces from the sheet. Then some soldering on the back side puts it all together, and a few hours in ammonia for the consistent look.
-
-{% comment %}
-TODO: Photo of sundial cutting (old)
-{% endcomment %}
+<figure>
+	<img src="{{ site.baseurl }}/assets/sundial_parts.jpg" alt="Sundial for Jack Sparrow Compass cut from brass">
+	<figcaption>
+        Inside the compass, there is a brass piece with a sundial. I engraved the contours onto a 2mm brass sheet and then used a grinder and a sander to cut pieces from the sheet. Then some soldering on the back side puts it all together, and a few hours in ammonia for the consistent look.
+	</figcaption>
+</figure> 
 
 The main dial is a multi-layer item:
 1. A small Lego gear that mounts on the mechanism
