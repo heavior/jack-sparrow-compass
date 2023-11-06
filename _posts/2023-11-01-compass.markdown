@@ -59,9 +59,13 @@ So, all that makes Compass a pretty good prop for interactive geo-location quest
 
 When building the box, I tried to achieve a repeatable process. I created a parametric generator for the part templates and used a Cricut Mater machine to transfer the design into material. That allowed me to do iterations and fix mistakes as I was figuring out achievable dimensions and the process. Still, I’m not entirely happy with the automation: it still takes at least 3-4 days and 70+ parts to build a single item. The next iteration, if it happens, will rely on CNC milling.
 
-{% comment %}
-TODO: Cricut screenshot
-{% endcomment %}
+<figure>
+	<img src="{{ site.baseurl }}/assets/cricut_screenshot.png" alt="Making Jack Sparrow Compass using Cricut">
+	<figcaption>
+		More than 70 parts cut on the Cricut Maker
+	</figcaption>
+</figure> 
+
 
 The current iteration is made from stained basswood pieces cut on a Cricut and glued together. The decoration layer uses natural wood veneer. Veneer still creates a good visual effect but is prone to delayering and warping. I will look into using a bone inlay or a brass sheet for the decoration layer for future iterations.
 
@@ -71,15 +75,19 @@ The hinge, latch are ring holder are bought from Amazon, but customized:
 * The ring on the holder is replaced with a bigger one for better proportions
 * All parts are aged in ammonia fumes for a few hours
 
-{% comment %}
-TODO: Photo of brass parts
-{% endcomment %}
+<figure>
+	<img src="{{ site.baseurl }}/assets/prass_parts.jpg" alt="Aging brass in ammonia for antique compass">
+	<figcaption>
+		Brass parts on display
+	</figcaption>
+</figure> 
 
-The “dome” on the lid is made from a 6 mm acrylic DIY Christmas decoration ball. The outer side is covered with black acrylic paint and a satin finish, and the inside is glossy enamel with a ‘star map’.
-
-{% comment %}
-TODO: Photo of spare dome - inside and out
-{% endcomment %}
+<figure>
+	<img src="{{ site.baseurl }}/assets/dome.jpg" alt="Start map for the Jack Sparrow compass">
+	<figcaption>
+        The “dome” on the lid is made from a 6 mm acrylic DIY Christmas decoration ball. The outer side is covered with black acrylic paint and a satin finish, and the inside is glossy enamel with a ‘star map’.
+	</figcaption>
+</figure> 
 
 Inside the compass, there is a brass piece with a sundial. I engraved the contours onto a 2mm brass sheet and then used a grinder and a sander to cut pieces from the sheet. Then some soldering on the back side puts it all together, and a few hours in ammonia for the consistent look.
 
