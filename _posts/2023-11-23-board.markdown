@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Failures, iterations and memories board"
+date:   2023-11-23 11:11:11 -0800
+---
+
+<figure>
+	<img src="{{ site.baseurl }}/assets/board.jpg" alt="How to make interactive Jack Sparrow Compass">
+</figure> 
+
+Visual history of my Jack Sparrow Compass in one place. 
+
+Includes fails, parts evolutions, some tools, and artifacts I picked up at Youtopias and Burning Man.
+
+Most mounting hardware is made of 10 gauge copper wire that I also aged in ammonia.
