@@ -650,13 +650,13 @@ module renderBrassParts(cutout = false){
 }
 
 
-//translate([0,0,-partsDistance])   renderBottom();
+translate([0,0,-partsDistance])   renderBottom();
 renderBox();
-//translate([0,0,1*partsDistance])  renderBrassParts();
-//translate([0,0,1*partsDistance])  renderHinge();
+translate([0,0,1*partsDistance])  renderBrassParts();
+translate([0,0,1*partsDistance])  renderHinge();
 translate([0,0,2*partsDistance])  renderBoxDecor(fold = assemble);
-//translate([0,0,3*partsDistance])  renderLid();
-//translate([0,0,4*partsDistance])  renderLidDecor(fold = assemble);
+translate([0,0,3*partsDistance])  renderLid();
+translate([0,0,4*partsDistance])  renderLidDecor(fold = assemble);
 
 
 
