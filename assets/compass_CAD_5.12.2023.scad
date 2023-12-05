@@ -26,21 +26,21 @@ think - brass parts assembly - maybe can move it under decor level?
 think - how does decoration end at the bottom of the box?
 think - how does decoration end at the bottom of the lid?
 
-test - do box and decor need shampher around hinge ?
+test - do box and decor need champher around hinge ?
 
 brass parts - add marks
 brass parts - add numbers (maybe in solidworks?)
 
 add assembly:
     placement for nuts/incerts in the box
-    holes and shampher for screws in the bottom
+    holes and champher for screws in the bottom
     
 elctronics:
     add hole for magnet in the lid
     figure out lighting (UV LED)
 
 nice to have:
-    add shampher under the brass dial (though it won'd be cnc-friendly, should work good for 3d printing)
+    add champher under the brass dial (though it won'd be cnc-friendly, should work good for 3d printing)
 */
 
 assemble = false; // change rendering mode
@@ -99,7 +99,7 @@ boxTopThickness = boxWallThickness;
 brassThickness = 2; // brass material
 brassSupportBaseWidth = 3;   //max width of one of three suports - "legs" 
 brassSupportAngle = 4;  // How brass support narrows
-brassShampherAngle = 45; // How sharp should we shape the brass support. Make sure you have cnc mill with that angle
+brassChampherAngle = 45; // How sharp should we shape the brass support. Make sure you have cnc mill with that angle
 brassSupportExtention = 5; // 5mm brass leg extension that will go under box consturction to secure the brass parts
 brassSupportExtentionThickness = .5; // how thick should extensions be
 brassDialDiameter = 25; // outer diameter of the brass dial
@@ -142,9 +142,9 @@ cutoutdelta = .1*boxWallThickness;  // this helps reducing artefact when using d
 
 sideLength = .6*boxWidth;   // longer side of octagon compared to the whole size of the box
 
-shampherDepth = decorHeight-decorBendThickness;
-decorTotalWidth = boxWidth + 2*shampherDepth;
-decorSide = sideLength + 2*tan(45/2)*shampherDepth;
+champherDepth = decorHeight-decorBendThickness;
+decorTotalWidth = boxWidth + 2*champherDepth;
+decorSide = sideLength + 2*tan(45/2)*champherDepth;
 
 innerBoxWidth = boxWidth - 2*boxWallThickness;
 innerSideLength = sideLength - 2*tan(45/2)*boxWallThickness;
@@ -276,7 +276,7 @@ module hollowOctagon(width, side, thickness, height){
     }
 }
 
-module hollowBox(a, b, thickness, height, shampherD){
+module hollowBox(a, b, thickness, height, champherD){
     difference() {
         // outer box
         cube([a, b, height],center=true);
@@ -285,16 +285,16 @@ module hollowBox(a, b, thickness, height, shampherD){
         cube([a - 2*thickness, b - 2*thickness, height + 2*cutoutdelta],center=true); 
        
         //translate([a/2,b/2,-height/2]) rotate([0,0,180])
-        //    shampher(a, shampherD, 45, 1+cutoutdelta, useX = true);   
+        //    champher(a, champherD, 45, 1+cutoutdelta, useX = true);   
         
         translate([-a/2,-b/2,-height/2]) rotate([0,0,0])
-            shampher(a, shampherD, 45, 1+cutoutdelta, useX = true);   
+            champher(a, champherD, 45, 1+cutoutdelta, useX = true);   
 
         translate([a/2,-b/2,-height/2]) rotate([0,0,0])
-            shampher(b, shampherD, 45/2, 1+cutoutdelta, useX = false);   
+            champher(b, champherD, 45/2, 1+cutoutdelta, useX = false);   
         
         translate([-a/2,-b/2,-height/2]) rotate([0,0,0])
-            shampher(b, shampherD, 45/2, 1+cutoutdelta, useX = false);   
+            champher(b, champherD, 45/2, 1+cutoutdelta, useX = false);   
     }   
 }
 
@@ -350,7 +350,7 @@ module renderLid(){
         }
 }
 
-module shampher(length, depth, angle, delta, useX=true)
+module champher(length, depth, angle, delta, useX=true)
 {
     points = [    
         [-depth * (useX?tan(angle):1), 0],
@@ -374,24 +374,24 @@ module decorFrame(){
                 hollowOctagon(decorTotalWidth, decorSide, decorLineThickness, decorFullHeight);
             }
             translate([-decorTotalWidth/2,-decorTotalWidth/2,0]) rotate([0,0,0]){            
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = false);    
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = true);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = false);    
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = true);
             }
             translate([decorTotalWidth/2,decorTotalWidth/2,0]) rotate([0,0,180]){
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = false);
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = true);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = false);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = true);
             }
             translate([corner-decorTotalWidth/2,-decorTotalWidth/2,0]) rotate([0,0,45])
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = false);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = false);
             
             translate([decorTotalWidth/2-corner,-decorTotalWidth/2,0]) rotate([0,0,45])
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = true);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = true);
             
             translate([decorTotalWidth/2-corner,decorTotalWidth/2,0]) rotate([0,0,-45-90])
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = false);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = false);
                 
             translate([corner-decorTotalWidth/2,decorTotalWidth/2,0]) rotate([0,0,-45-90])
-                shampher(decorTotalWidth, shampherDepth+decorDepth, 45, cutoutdelta, useX = true);
+                champher(decorTotalWidth, champherDepth+decorDepth, 45, cutoutdelta, useX = true);
         }
 }
 
@@ -402,29 +402,29 @@ module decorSides(height, fold = false){
     edgestep1 = sqrt(pow(decorTotalWidth,2) + pow(decorSide,2) - pow(decorEdge,2))/2;;
     
     translate([0,step1,decorFullHeight/2]) rotate([fold?-90:0,0,0]) translate([0,step2,-decorFullHeight/2]) 
-        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
     translate([0,-step1,decorFullHeight/2]) rotate([fold?90:0,0,0]) translate([0,-step2,-decorFullHeight/2]) 
         rotate([0,0,180])
-        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
     translate([step1,0,decorFullHeight/2]) rotate([0,fold?90:0,0]) translate([step2,0,-decorFullHeight/2]) 
         rotate([0,0,180+90])
-        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
     translate([-step1,0,decorFullHeight/2]) rotate([0,fold?-90:0,0]) translate([-step2,0,-decorFullHeight/2]) 
         rotate([0,0,180-90])
-        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+        hollowBox(decorSide, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
     
     rotate([0,0,45]){
         translate([0,edgestep1,decorFullHeight/2]) rotate([fold?-90:0,0,0]) translate([0,step2,-decorFullHeight/2]) 
-            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
         translate([0,-edgestep1,decorFullHeight/2]) rotate([fold?90:0,0,0]) translate([0,-step2,-decorFullHeight/2]) 
             rotate([0,0,180])
-            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
         translate([edgestep1,0,decorFullHeight/2]) rotate([0,fold?90:0,0]) translate([step2,0,-decorFullHeight/2]) 
             rotate([0,0,180+90])
-            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);
+            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);
         translate([-edgestep1,0,decorFullHeight/2]) rotate([0,fold?-90:0,0]) 
             translate([-step2,0,-decorFullHeight/2]) rotate([0,0,180-90])
-            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, shampherDepth + decorDepth);   
+            hollowBox(decorEdge, height, decorLineThickness, decorFullHeight, champherDepth + decorDepth);   
     }
 }
     
@@ -516,14 +516,14 @@ module renderBrassLeg(brassLegLength,cutout = false){
                 
             translate([0,0,0])
                 rotate([0,0,-brassSupportAngle/2])
-                rotate([0,cutout?0:(90-brassShampherAngle),0])
+                rotate([0,cutout?0:(90-brassChampherAngle),0])
                 translate([-cutoutWidth,-cutoutdelta,-cutoutHeight/2])
                 cube([cutoutWidth, brassLegLength+2*cutoutdelta,cutoutHeight]);
             
             
             translate([brassSupportBaseWidth,0,0])
                 rotate([0,0,brassSupportAngle/2])
-                rotate([0,cutout?0:(-90+brassShampherAngle),0])
+                rotate([0,cutout?0:(-90+brassChampherAngle),0])
                 translate([0,-cutoutdelta,-cutoutHeight/2])
                 cube([cutoutWidth, brassLegLength+2*cutoutdelta,cutoutHeight]);
         }
