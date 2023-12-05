@@ -5,7 +5,7 @@ For inquiries reach out through contacts here: https://github.com/heavior/jack-s
 
 
 Last published: Nov 27 2023, newer version migth be in development
-Next version with bugfixes and improvements: https://heavior.github.io/jack-sparrow-compass/assets/compass_CAD_27.11.2023.scad
+Next version with bugfixes and improvements: https://heavior.github.io/jack-sparrow-compass/assets/compass_CAD_5.12.2023.scad
 To request updated version, leave comment here: https://www.therpf.com/forums/threads/interactive-jack-sparrow-compass-show-off-and-questions.354776/
 
 
