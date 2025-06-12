@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Burning Man 2025"
+title:  "Naviguesser for Burning Man 2025"
 date:   2024-03-26 11:11:11 -0800
 ---
 
@@ -11,7 +11,7 @@ date:   2024-03-26 11:11:11 -0800
 	</figcaption>
 </figure> 
 
-# **Naviguesser is coming to Burning Man 2025**
+# **Naviguesser 2025 is in the works**
 
 ### **Imagine..**
 
