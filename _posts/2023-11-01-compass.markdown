@@ -84,9 +84,9 @@ When building the box, I tried to achieve a repeatable process. I created a para
 
 The current iteration is made from stained basswood pieces cut on a Cricut and glued together. The decoration layer uses natural wood veneer. Veneer still creates a good visual effect but is prone to delayering and warping. I will look into using a bone inlay or a brass sheet for the decoration layer for future iterations.
 
-The hinge, latch are ring holder are bought from Amazon, but customized:
+The hinge, latch and ring holder are from Amazon, yet customized:
 * The hinge is cut to better fit the dimensions
-* The latch is bend to allow it to lock automatically when lid is closed
+* The latch is bent to allow it to lock automatically when lid is closed
 * The latch receiver is replaced with a piece of brass rod
 * The ring on the holder is replaced with a bigger one for better proportions
 * All parts are aged in ammonia fumes for a few hours
@@ -140,7 +140,7 @@ All layers are glued with cyanoacrylate, then shaped evenly under the hot iron, 
 <figure>
 	<img src="{{ site.baseurl }}/assets/compass_lace.jpg" alt="DIY interactive compass from The Pirates of the Caribbean">
 	<figcaption>
-		Finally, to complete the experience, I added a leather lace with some braiding, aged brass carabiner from Aliexpress, and sailors knot to close the loop. This allows comfortable wearing around the neck as well as on the belt.
+		Finally, to complete the experience, I added a leather lace with some braiding, aged brass carabiner from Aliexpress, and fisherman's knot to close the loop. This allows comfortable wearing around the neck as well as on the belt.
 	</figcaption>
 </figure> 
 
