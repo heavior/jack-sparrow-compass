@@ -32,7 +32,7 @@ So I built it: a programmable compass that has a set of destinations in memory, 
 	</figcaption>
 </figure> 
 
-This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutydiy/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
+This page offers a breakdown of the features and build process. If you are interested in this project or have any questions, don’t hesitate to reach out to me through [Instagram](https://www.instagram.com/lightdutymagic/) or [LinkedIn](https://www.linkedin.com/in/balashovevgeny/)
 
 
 ## Features
@@ -206,12 +206,12 @@ I assembled three units of the current generation, but want to make a handful mo
 
 I think it has great potential for quests, renaissance fairs, and pirate festivals. It’s also a great conversation starter when used as a prop for a cosplay costume.
 
-[Let me know what you think about this project](https://www.instagram.com/lightdutydiy/), and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
+[Let me know what you think about this project](https://www.instagram.com/lightdutymagic/), and reach out if you want to collaborate or have an idea how to evolve it into a new magical experience!
 
 
 ## Links and Credits
 
-* Some reels about the process in my Instagram: [@LightDutyDIY](https://www.instagram.com/lightdutydiy/)
+* Some reels about the process in my Instagram: [@LightDutyMagic](https://www.instagram.com/lightdutymagic/)
 * Youtube: [https://www.youtube.com/@LightDuty](https://www.youtube.com/@LightDuty) 
 * A couple of stories about working on this compass: [The compass that doesn’t point North. Obsessing over user experience for Burning Man.](https://www.linkedin.com/pulse/compass-doesnt-point-north-creating-experience-burning-balashov/) 
 * An overview for Replica Prop Forum: [Interactive Jack Sparrow Compass](https://www.therpf.com/forums/threads/interactive-jack-sparrow-compass-show-off-and-questions.354776/)
