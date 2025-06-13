@@ -42,13 +42,13 @@ The Naviguesser is meant to create a **boutique experience**. Somwhat similer to
 
 ### **History**
 
-The project idea came to us in 2022, when we had a trycicle-pirate ship, and thought that it would be cool to make a Jack Sparrow Compaass that always points to the men.
+The project idea came to us in 2022, when we had a trycicle-pirate ship, and thought that it would be cool to make a Jack Sparrow Compass that always points to the men.
 
-Since 2023 I'm bringing compasses to the burn, improving and scaling bit-by-bit. I’m still working out a few technical kinks, but the feedback so far has been overwhelmingly positive.
+Since 2023 I'm bringing devices to the burn, improving and scaling bit-by-bit. I’m still working out a few technical kinks, but the feedback so far has been overwhelmingly positive.
 
 There is a supporting service [Burn Planner](https://burn-planner.web.app/) to select events, "fleet management" web application to manage map and schedule, custom electronics design, firmware with all the logic and special effects.
 
-This year's focus is upgradeing the hardware and solving some design issues.
+This year's focus is upgrading the hardware and solving some design issues.
 
 ---
 
