@@ -7,7 +7,7 @@
 	{% if page.thumbnail %}
 	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/{{ page.thumbnail }}">
 	{% else %}
-	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/thumbnail.jpg">
+	<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/compass_2024.jpg">
 	{% endif %}
 
 	{% if page.title %}
@@ -15,6 +15,16 @@
 	{% else %}
 	<meta property="og:title" content="{{ site.title }}">
 	{% endif %}
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/compass_2024.jpg">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
