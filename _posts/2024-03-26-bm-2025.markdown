@@ -18,11 +18,11 @@ date:   2024-03-26 11:11:11 -0800
 ---
 ### **Imagine..**
 
-You’ve finally escaped your camp duties and wander into Black Rock City, ready to explore, participate, and embrace whatever the playa has to provide. You’re an adventurer, open to side-quests and unexpected encounters.
+You've finally escaped your camp duties and wander into Black Rock City, ready to explore, participate, and embrace whatever the playa has to provide. You're an adventurer, open to side-quests and unexpected encounters.
 
 Climbing a piece of art or stumbling into a whimsical bar, you meet a strange NPC. They share a tale from another time and realm and, if you roll your charisma check well, hand you a mysterious artifact: a beautifully crafted antique object of wood and brass, with a sundial and a map of the city.
 
-It resembles a compass, but it doesn’t point north.
+It resembles a compass, but it doesn't point north.
 
 The stranger calls it a **Naviguesser**. Every time you open your heart and trust the magic, it chooses a new path for you. Each destination is intentional, guided by the collective wisdom of thousands of burners.
 
@@ -36,15 +36,15 @@ Just another magical day at Burning Man.
 
 ### **The Vibe**
 
-The Naviguesser is meant to create a **boutique experience**. Somwhat similer to receiving a room key at Hotel Ashram Galactica for the day, or being treated to a multi-course meal at the Black Rock French Quarter. Only a few get to participate, but there is no VIP list, no privileged access, all it takes is **luck, an open heart, and the willingness to participate**.
+The Naviguesser is meant to create a **boutique experience**. Somewhat similar to receiving a room key at Hotel Ashram Galactica for the day, or being treated to a multi-course meal at the Black Rock French Quarter. Only a few get to participate, but there is no VIP list, no privileged access, all it takes is **luck, an open heart, and the willingness to participate**.
 
 ---
 
 ### **History**
 
-The project idea came to us in 2022, when we had a trycicle-pirate ship, and thought that it would be cool to make a Jack Sparrow Compass that always points to the men.
+The project idea came to us in 2022, when we had a tricycle-pirate ship, and thought that it would be cool to make a Jack Sparrow Compass that always points to them.
 
-Since 2023 I'm bringing devices to the burn, improving and scaling bit-by-bit. I’m still working out a few technical kinks, but the feedback so far has been overwhelmingly positive.
+Since 2023 I'm bringing devices to the burn, improving and scaling bit-by-bit. I'm still working out a few technical kinks, but the feedback so far has been overwhelmingly positive.
 
 There is a supporting service [Burn Planner](https://burn-planner.web.app/) to select events, "fleet management" web application to manage map and schedule, custom electronics design, firmware with all the logic and special effects.
 
@@ -71,22 +71,22 @@ Everything is stored locally—no phone, no internet required.
 There are four ways to help create the magic:
 
 **1\. Camps – Create special moments**  
- The device is designed to give the player the best possible day on the playa—no time wasted, just maximum experience. Camps can elevate that even further. When someone arrives holding the Naviguesser, they’re on a magical journey. That’s your chance to blow their mind: offer a bit of extra warmth, a trinket, a story, an extra spin, or anything that fits your camp’s vision. Become part of the story they get to tell tomorrow.
+ The device is designed to give the player the best possible day on the playa—no time wasted, just maximum experience. Camps can elevate that even further. When someone arrives holding the Naviguesser, they're on a magical journey. That's your chance to blow their mind: offer a bit of extra warmth, a trinket, a story, an extra spin, or anything that fits your camp's vision. Become part of the story they get to tell tomorrow.
 
 **2\. People – Join the cast as actors**  
- The burner matures from player to NPC—from experiencing the magic to creating it. With this project, you get to step into a role of your own choosing. Dress as a character from another time or realm, invent your legend, and wander the city. You interact with random burners and get to choose who you gift this experience to. It’s like being a free-roaming actor at Disneyland, but with dust and heart. Cast members get a device for themselves on another day, and I’ll be making something special for everyone who joins.
+ The burner matures from player to NPC—from experiencing the magic to creating it. With this project, you get to step into a role of your own choosing. Dress as a character from another time or realm, invent your legend, and wander the city. You interact with random burners and get to choose who you gift this experience to. It's like being a free-roaming actor at Disneyland, but with dust and heart. Cast members get a device for themselves on another day, and I'll be making something special for everyone who joins.
 
 **3\. Wizards – Bring your skills and vision**  
- I only have so many hands, and the project can go much further with your help. Join the project if you’re excited to help with graphic design, 3D modeling, story and promo, camp outreach, or engineering in any form (frontend, backend, mobile, microcontrollers—you name it). You’re welcome to shape the project with your ideas, as long as you’re ready to execute them.
+ I only have so many hands, and the project can go much further with your help. Join the project if you're excited to help with graphic design, 3D modeling, story and promo, camp outreach, or engineering in any form (frontend, backend, mobile, microcontrollers—you name it). You're welcome to shape the project with your ideas, as long as you're ready to execute them.
 
 **4\. Angels – Support the magic**  
- With new import tariffs and technical complexity, scaling this project to the desired scale is not feasible on my personal budget alone. I’m committed to run a small batch, but with your support, we can gift this experience to many more burners. Donations help cover more electronic units, outsource wood and brass work to individual craftsmen, upgrade and scale manufacturing capabilities, and literally buy more time to polish the idea.
+ With new import tariffs and technical complexity, scaling this project to the desired scale is not feasible on my personal budget alone. I'm committed to run a small batch, but with your support, we can gift this experience to many more burners. Donations help cover more electronic units, outsource wood and brass work to individual craftsmen, upgrade and scale manufacturing capabilities, and literally buy more time to polish the idea.
 
 ---
 
 ### **Frequently asked questions**
 
-**What if someone doesn’t return the device?**  
+**What if someone doesn't return the device?**  
  This comes up a lot. The short answer: most people return it. The rest is collateral—the risk of bringing art to the playa.
 
 The experience is designed to make it easy to return the device:
@@ -97,14 +97,14 @@ The experience is designed to make it easy to return the device:
 4. When the battery starts running low—or the journey reaches 24 hours—the compass only points to base.  
 5. We'll try to place the return point at one of the friendly camps close to Esplanade.  
 6. Once the battery is dead, the device becomes a trinket—a beautiful but dead artifact.  
-7. After the event, we’ll run a social media campaign to recover some stragglers.
+7. After the event, we'll run a social media campaign to recover some stragglers.
 
-Since 2024, only one device is unaccounted for. The player reached out afterward yet didn’t manage to complete the return. The biggest challenge for players was the remote location of the base camp at 9:00 & I. Lesson learned—we’re looking for a better spot this year.
+Since 2024, only one device is unaccounted for. The player reached out afterward yet didn't manage to complete the return. The biggest challenge for players was the remote location of the base camp at 9:00 & I. Lesson learned—we're looking for a better spot this year.
 
-We’re making a bet that **most burners are good people**—especially when it’s easy to act with good will.
+We're making a bet that **most burners are good people**—especially when it's easy to act with good will.
 
 **Can I purchase the device?**  
-For many reasons, I’m not making them to sell.   
+For many reasons, I'm not making them to sell.   
 Yet, I will be gifting naviguessers to major project supporters and co-authors. Actors are guaranteed to participate in the experience too.
 
 **I want to help or have an idea, how to reach out?**
